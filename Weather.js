@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 require('dotenv').config();
 const app = express();
-const apiKey =process.env.API_KEY;// Replace with your actual API key
+const apiKey =process.env.API_KEY;
 
 app.get('/weather/:city', async (req, res) => {
   const city = req.params.city;
